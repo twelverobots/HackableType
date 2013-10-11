@@ -1,0 +1,25 @@
+/* custom styles */
+
+#left {
+	float:left;	
+}
+
+#content {
+	float:left;
+	padding: 30px;
+	width: 700px;
+}
+
+.description {
+	padding: 0 0 20px;
+	font-size: 1.2em;
+	color: #006400;
+}
+
+.hintOpenLink, .hintCloseLink {
+	font-size: .8em;
+	text-decoration: underline;
+}
+
+th { text-align:left; border-bottom:1px solid black;}
+.message { padding: 10px; border-bottom: 1px solid silver; margin:3px; }

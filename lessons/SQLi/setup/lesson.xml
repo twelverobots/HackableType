@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Lesson xmlns="http://www.hackabletype.com/schema.xsd">
+	<displayName>SQL Injection - Lesson 1</displayName>
+	<sqlScriptFile>SQLi.sql</sqlScriptFile>
+	
+	<Hints>
+		<Hint>
+			<![CDATA[
+			In MySQL, there are three ways to comment out code ('//', '/* */', '##')
+			]]>
+		</Hint>
+		<Hint>
+			<![CDATA[
+			In MySQL single quotes can be escaped using a backslash (\)
+			]]>
+		</Hint>
+	</Hints>
+	
+	<Solution>
+		<![CDATA[
+		The key to SQL injection is to &quot;break out&quot;itu of the data context and into an execution context.
+		]]>
+	</Solution>
+</Lesson>

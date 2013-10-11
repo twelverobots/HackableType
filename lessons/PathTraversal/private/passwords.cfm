@@ -1,0 +1,3 @@
+Here are the system passwords, don't worry this is a secure line...
+
+user: root password: pa$$word

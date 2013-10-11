@@ -1,0 +1,104 @@
+@charset "utf-8";
+/*  CSS Document for ORANGE */
+/*
+******************************************************************************************************
+
+Title:			main.css
+Browser(s): 	All 
+
+Author: 		Marko Prljić (http://www.markoprljic.iz.hr)
+Created: 		23.11.2008
+
+******************************************************************************************************
+*/
+
+
+/*-------------------------------DEFINE BODY PROPERTIES----------------------------------------*/
+
+/*DO NOT EDIT ANYTHING INSIDE BODY PROPERTIES*/
+
+* {
+	margin: 0 auto 0 auto; /* GLOBAL RESET */
+	padding: 0;
+}
+body{
+	margin: 0 auto 0 auto;
+	font-size: 62.5%; 
+	font-family: Arial, Sans-Serif; 
+	font-weight:normal;
+	line-height: 150%; 
+	color:#333;
+	background: #E3E6E4 url(../images/bg.jpg) top left repeat-x; 
+
+}
+
+div, p, ul, h2, h3, h4, img{
+	padding:0px; margin:0px; border:none;
+}
+ul{
+	list-style-type:none;
+}
+.spacer{
+	clear:both; 
+	font-size:0px; 
+	line-height:0px;
+}
+
+a { outline:none; /* Remove Firefox's dotted borders */ text-decoration:none; color:#999999; }
+a:hover{ color:#333;}
+a img { border:none;} /* Remove IE's blue borders */
+
+/*HEADINGS*/
+h1 {border:none; margin:0; padding:10px 0 0 10px; width:129px;}
+h2 {font-size: 2em; border:none; margin:0; padding:0; margin-bottom:10px; display:block; line-height:1em;}
+h3 {font-size: 1.6em; border:none; margin:0; padding:0;}
+h4 {font-size: 1.4em; border:none; margin:0; padding:0;}
+h5 {font-size: 1em; border:none; margin:0; padding:0;}
+h6 {font-size: 1em; border:none; margin:0 0 0px 0; padding:0; color:#FF6600;}
+p  {font-size: 1.2em; padding:20px 0 0 0;}
+.hr{border-bottom:1px solid #CCCCCC; border-left:none; border-right:none; border-top:none; margin:10px 0 10px 10px; padding:0; width:940px;}
+.hr_s{border-bottom:1px solid #CCCCCC; border-left:none; border-right:none; border-top:none; margin:10px 0 10px 0; padding:0; width:200px;}
+.left{float:left; padding:0 10px 0 0;}
+.right{float:right; }
+.stroke{ border:1px solid #CCCCCC;}
+
+/*-------------------------------END----------DEFINE BODY PROPERTIES----------------------------------------*/
+#wrapper{width:960px; height:100%; margin:0 auto; padding:0;}
+/*------------------------------HEADER--------------------------------*/
+
+#header{ height:100%; padding:0;}
+.teaser{ padding:10px 0 0 10px;}
+#menu{float:right; padding:0; margin:-15px 10px 0 0;}
+#menu a{float:left; text-align:left; text-decoration:none; font-size:1.4em;  padding:0 5px 2px 5px; color:#999; display:block; border:none; }
+#menu a:hover {color:#fff; background-color:#F59202; } /*Chanage bg color on menu item hover*/
+#menu a.current {color:#fff; background-color:#F59202; } /*Chanage bg color on menu item active*/
+
+/*------------------------------CONTENT--------------------------------*/
+
+.box{ width:280px; height:302px; padding:10px; margin:10px; float:left; display:inline; overflow:hidden; background:#E3E6E4 url(../images/bg_box.jpg) top left repeat-x; border-bottom:none; border-left:none; border-right:none; border-top:2px solid #F59202;}
+.box:hover{ width:280px; height:298px; padding:10px; margin:10px; float:left; display:inline; overflow:hidden; background:#E3E6E4 url(../images/bg_box_hover.jpg) top left repeat-x; border-bottom:4px solid #000; border-left:none; border-right:none; border-top:2px solid #F59202;}
+.box h3 { text-transform:uppercase; }
+.center{ margin:30px 60px 20px 60px;}
+.main{float:left; padding:0; margin:10px 0 0 10px; width:690px; display:inline;}
+.side{float:right; padding:10px; margin:10px; width:200px; height:100%; display:inline; background-color:#E3E6E4; border-bottom:none; border-left:none; border-right:none; border-top:2px solid #F59202;}
+.side p{font-size: 1.1em; padding:0;}
+.news{ padding:0;}
+.quote{ background:url(../images/quote.png) top left no-repeat; margin:20px 0 0 0; display:inline-block; overflow:hidden;}
+.quote p{ padding:10px;}
+.quote p.signature{ color:#000; font-size:1em; font-style:italic;}
+ul{ padding:10px; margin:10px 0 0 20px;}
+ul li{ list-style:disc; font-size:1.1em; color:#666; padding:0 0 4px 0;}
+
+/*------------------------------FOOTER--------------------------------*/
+
+#footer{ width:920px; padding:10px; margin:0;}
+
+/*------------------------------MAIL FORM--------------------------------*/
+
+form#two {width:100%;padding:0;margin-top:5px;}
+form#two fieldset {width:100%;padding:5px 0 0 0;font-family:Arial, sans-serif;margin-bottom:0.5em;border: 0;font-size: 11px;}
+form#two input {border:1px solid #ccc;padding:0.5em 0 0 0.5em;margin-bottom:0.6em; width:400px; height:20px; font-family:Arial, Helvetica, sans-serif; font-size:9px; color:#999999;}
+form#two value{font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#999999;}
+form#two textarea {width:660px;height:15em;border:1px solid #ccc;padding:0.5em;overflow:auto; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#999999;}
+form#two #button1 { float:left; color:#ffffff;padding:0;cursor:pointer;width:50px;margin:20px 20px 0 0;border:none;font-family: Arial, sans-serif;font-size: 10px; background-color:#F59202;}
+form#two #button1:hover{margin:20px 20px 0 0;color:#000000;font-family: Tahoma, Arial, Helvetica, sans-serif;font-size: 10px;border:1px solid #cccccc;}

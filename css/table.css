@@ -1,0 +1,124 @@
+*.orangeTable
+{
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+table.orangeTable 
+{
+	text-align: left;
+	border-spacing: 0px;
+	border: 1px solid #aeb3b6;
+	border-collapse: collapse;
+	
+}
+
+
+table.orangeTable a, table.orangeTable, table.orangeTable tbody, table.orangeTable tfoot, table.orangeTable tr, table.orangeTable th, table.orangeTable td 
+{
+   font-family: Arial, Helvetica, sans-serif;
+	line-height: 2.0em;
+	font-size: 13px;
+	color: #55595c;
+}
+
+table.orangeTable tbody td{
+	line-height: 2.5em;
+}
+
+table.orangeTable caption
+{
+	padding: .4em 0 ;
+	font-size: 240%;
+	font-style: normal;
+	color: #FB7E00;
+}
+
+table.orangeTable a
+{
+	display: block;
+	text-decoration: none;
+	color: #FF8E53;
+	padding-right: 1.5em;
+	
+}
+
+table.orangeTable a:hover, table.orangeTable a:focus
+{
+text-decoration: underline;
+}
+
+table.orangeTable th a
+{
+	color: #FF8E53;
+	text-align: right;
+}
+
+table.orangeTable .odd th a,table.orangeTable .odd td a,table.orangeTable .odd td{
+	color: #666;
+	padding-right: 1.0 em;
+}
+
+table.orangeTable th a:hover, table.orangeTable th a:focus, table.orangeTable tbody tr:hover th
+{   
+   background-color: #FFCC99;
+	color: #fff !important;
+}
+
+table.orangeTable .odd th,table.orangeTable .odd td{
+	background-color: #DDDDDD;
+}
+
+table.orangeTable thead th
+{
+	 padding-right: 1.0em;
+	color: #000;
+	font-style: normal;
+	background-color: #fff;
+	border-bottom: 1px dotted #aeb3b6;
+	
+}
+
+table.orangeTable tfoot{
+	background-image: url(verlauf_schwarz.gif);
+	border-top: 1px solid #fff;
+	
+	
+}
+
+table.orangeTable tfoot th, table.orangeTable tfoot td{
+	color: #fff;
+}
+
+table.orangeTable tbody th
+{
+   padding-right: 1.0em;
+	color: #25c1e2;
+	font-style: normal;
+	background-color: #fff;
+	border-bottom: 1px dotted #aeb3b6;
+}
+
+table.orangeTable td
+{
+   color: #FF8E1C;
+	border-bottom: 1px dotted #aeb3b6;
+	padding-right: 0.5em;
+	
+}
+
+table.orangeTable tbody tr.odd
+{
+	border-bottom: 1px dotted #aeb3b6;
+}
+
+table.orangeTable tbody tr:hover td
+{
+  background-color: #FFCC99;
+}
+
+table.orangeTable tbody tr:hover td, table.orangeTable tbody tr:hover th, table.orangeTable tbody tr:hover a
+{
+	color: #fff !important;
+}
