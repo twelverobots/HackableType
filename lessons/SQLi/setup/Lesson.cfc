@@ -1,5 +1,5 @@
 <cfcomponent extends="components.Lesson" implements="interfaces.iLesson">
-	<cfset variables.lessonName = "Insecure Direct Object Reference" />
+	<cfset variables.lessonName = "SQL Injection Lesson 1" />
 
 	<cffunction name="setup" access="public" returntype="void" output="false">
 		<cfset var initQuery = "" />
@@ -11,7 +11,7 @@
 		<!--- RUN SQL Scripts to set up the DB --->
 		
 		<!--- Read in the SQL from an external text file--->
-		<cfset initFile = fileOpen(thisDir & 'SQL.sql') />
+		<cfset initFile = fileOpen(thisDir & 'SQLi.sql') />
 		
 		<cfloop condition="NOT FileisEOF(initFile)">
 			<cfset sqlText = FileReadLine(initFile) />
@@ -22,9 +22,6 @@
 		</cfloop>
 		
 		<cfset copyLessonSourceFiles()>
-		
-		<cfset dbGateway = createObject('component', 'lessons.DirectObjectReference.dbGateway') />
-		<cfset session.user = dbGateway.getUserInfo(1) />	
 		
 	</cffunction>	
 
