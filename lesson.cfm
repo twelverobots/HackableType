@@ -8,7 +8,7 @@
 		</cftry>
 		<cfset lesson.setup()>
 		<cfset session.currentLesson = "lessons/" & url.lesson>
-		<cflocation url="/lessons/#url.lesson#/" addtoken="false">
+		<cflocation url="/lessons/#url.lesson#/playground/" addtoken="false">
 	</cfcase>
 	<cfdefaultcase>
 		Unknown Action

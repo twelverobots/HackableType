@@ -21,24 +21,6 @@
 	</cffunction>
 	
 	<cffunction name="setup" access="public" returntype="void" output="false">
-		<cfset var initQuery = "" />
-		<cfset var sqlText = "" />
-		<cfset var initFile = "" />
-		<cfset var dir = "" />
-		<cfset var thisDir = ReplaceNoCase(GetCurrentTemplatePath(), "Lesson.cfc", "")>
-		
-		<!--- RUN SQL Scripts to set up the DB --->
-		
-		<!--- Read in the SQL from an external text file--->
-		<cfset initFile = fileOpen(thisDir & 'SQLi.sql') />
-		
-		<cfloop condition="NOT FileisEOF(initFile)">
-			<cfset sqlText = FileReadLine(initFile) />
-			
-			<cfquery name="initQuery" datasource="#getConfiguration().getDatasource()#">
-				#preserveSingleQuotes(sqlText)#
-			</cfquery>
-		</cfloop>
 		
 		<cfset copyLessonSourceFiles()>
 		
@@ -47,11 +29,21 @@
 	<cffunction name="copyLessonSourceFiles" returntype="void" access="package" output="false" hint="I copy files from setup/src in to the root of the lesson dir.">
 		<cfset var dir = "" />
 		<cfset var lessonDir = getLessonDirectory()>
+		<cfset var playgroundDir = lessonDir & "playground/">
 		<cfdirectory action="list" name="dir" directory="#lessonDir#setup/src/" type="file" />
+		<cfif NOT directoryExists(playgroundDir)>
+			<cfset directoryCreate(playgroundDir)>
+		</cfif>
 		<cfloop query="dir">
-			<cfset fileCopy(dir.directory & "/" & dir.name, lessonDir) />
-			<cfset fileSetAccessMode(lessonDir & dir.name, "777") />
+			<cfset fileCopy(dir.directory & "/" & dir.name, playgroundDir) />
+			<cfset fileSetAccessMode(playgroundDir & dir.name, "777") />
 		</cfloop>
+		<!---
+		<cfif NOT fileExists(lessonDir & "index.cfm")>
+			<cfset fileWrite(lessonDir & "index.cfm", "<cflocation url=""playground/"" addtoken=""false"">")>
+			<cfset fileSetAccessMode(lessonDir & "index.cfm", "777") />
+		</cfif>
+		--->
 	</cffunction>
 	
 	<cffunction name="getLessonDirectory" returntype="string" output="false" hint="I return the lesson directory path, eg: /lessons/lessonName/">
