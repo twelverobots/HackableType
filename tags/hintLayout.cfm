@@ -6,18 +6,27 @@
 			
 			<h2>Hints</h2>
 			<div id="hintWrapper">
+
+			<div class="panel-group" id="accordion">
 				<cfloop from="1" to="#ArrayLen(attributes.ahints)#" index="hintIndex">
-					<div class="hint">
-						<p class="hintTitle">
-							Hint ###hintIndex#
-							<a href="##" class="hintOpenLink">open</a>
-						</p>
-						<div class="hintText">
-							#attributes.ahints[hintIndex]#
-						</div>
-						
-					</div>
-				</cfloop>	
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="##accordion" href="##collapse#hintIndex#">
+	          						Hint ###hintIndex#
+	        					</a>
+	      					</h4>
+	    				</div>
+	    				<div id="collapse#hintIndex#" class="panel-collapse collapse out">
+	      					<div class="panel-body">
+	        					#attributes.ahints[hintIndex]#
+	      					</div>
+	    				</div>
+	  				</div>	
+	  			</cfloop>
+  			</div>
+
+				
 			</div>
 		</div>
 	</cfoutput>

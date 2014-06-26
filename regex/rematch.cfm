@@ -1,3 +1,4 @@
+<cf_layout activeMenu="tools">
 <style>
 	textarea { width: 400px; font-size:x-large; }
 	.result, td { font-size:x-large !important;}
@@ -39,3 +40,4 @@
 	<cfdump var="#result#">
 </cfif>
 </div>
+</cf_layout>

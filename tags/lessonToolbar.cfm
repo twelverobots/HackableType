@@ -22,12 +22,11 @@
 	
 	<div id="left">
 		<cfoutput>
-	    	<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="/#session.currentLesson#/index.cfm">Lesson Home</a></li>
+	    	<ul class="nav nav-pills nav-stacked">
+				<li<cfif cgi.script_name contains "playground"> class="active"</cfif>><a href="/#session.currentLesson#/playground/index.cfm">Lesson Home</a></li>
 				<li><a id="resetLink" href="/lesson.cfm?action=setup&lesson=#ListLast(session.currentLesson, '/')#">Reset this lesson</a></li>
-				<li><a href="/#session.currentLesson#/support/hints.cfm">Hints</a></li>
-				<li><a href="/#session.currentLesson#/support/solution.cfm">Solution</a></li>
+				<li<cfif cgi.script_name contains "hints.cfm"> class="active"</cfif>><a href="/#session.currentLesson#/support/hints.cfm">Hints</a></li>
+				<li<cfif cgi.script_name contains "solution.cfm"> class="active"</cfif>><a href="/#session.currentLesson#/support/solution.cfm">Solution</a></li>
 			</ul>
 	    </cfoutput>
 	</div>

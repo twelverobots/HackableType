@@ -2,13 +2,28 @@
 
 #left {
 	float:left;	
+	margin-top: 40px;
 }
 
 #content {
-	float:left;
+	margin-left: 200px;
 	padding: 30px;
 	width: 700px;
+	margin-top: 40px;
 }
+
+#footer {
+	color: gray;
+	text-align: center;
+	margin-top: 50px;
+	border-top: 1px solid #f1f1f1;
+	padding: 10px;
+	font-size:smaller;
+}
+
+#main { margin-top: 40px;}
+
+
 
 .description {
 	padding: 0 0 20px;
