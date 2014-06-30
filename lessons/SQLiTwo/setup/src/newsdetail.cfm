@@ -11,10 +11,11 @@
 		<cflocation url="index.cfm" addtoken="false" />
 	</cfif>
 	
-	<cfset databaseGateway = createObject('component', 'lessons.SQLiTwo.dbGateway') />
+	<cfset databaseGateway = createObject('component', 'dbGateway') />
 	
 	<!--- Get all news articles --->
 	<cfset result = databaseGateway.getArticle(url.newsid) />
+	<div id="content">
 	<cfoutput query="result">
 		<div class="main">
 		    <h2>#result.title#</h2>
@@ -27,4 +28,5 @@
 		    <br /><br />
 		</div>
     </cfoutput>
+    </div>
 </cf_layout>

@@ -9,5 +9,6 @@
 			#exception.message#
 		</cfif>
 	</cfoutput>
+	<cfdump var="#exception#">
 </div>
 

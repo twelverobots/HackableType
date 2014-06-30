@@ -8,7 +8,7 @@
 			Craft a special HTTP request such as the following:
 			
 <pre>
-&lt;cfhttp url="http://<cfoutput>#cgi.server_name#<cfif cgi.server_port NEQ 80>:#cgi.server_port#</cfif></cfoutput>/lessons/FileUploads/upload.cfm" method="post"&gt;
+&lt;cfhttp url="http://<cfoutput>#cgi.server_name#<cfif cgi.server_port NEQ 80>:#cgi.server_port#</cfif></cfoutput>/lessons/FileUploads/playground/upload.cfm" method="post"&gt;
 	&lt;cfhttpparam file="#ExpandPath("my-hacker-code.cfm")#"
   		mimetype="image/png" 
   		type="file"

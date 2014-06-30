@@ -6,7 +6,7 @@
 		<h2>Solution</h2>
 	<cfoutput>
 	<pre>
-	&lt;cfhttp url="http://#cgi.server_name#/lessons/BypassCFFormValidation/form-action.cfm" method="post"&gt;
+	&lt;cfhttp url="http://#cgi.server_name#/lessons/BypassCFFormValidation/playground/form-action.cfm" method="post"&gt;
 		&lt;cfhttpparam name="year" value="Bob" type="formfield"&gt;
 	&lt;/cfhttp&gt;
 	

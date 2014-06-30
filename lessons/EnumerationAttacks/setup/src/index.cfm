@@ -3,7 +3,7 @@
 	<cf_lessonToolbar />
 	
 	<!--- 	
-		Create the databsae gateway object, this is the object that this 
+		Create the database gateway object, this is the object that this 
 		lesson uses to talk to the database.
 		Hint: This is important
 	--->

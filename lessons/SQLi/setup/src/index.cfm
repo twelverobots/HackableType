@@ -7,7 +7,7 @@
 		lesson uses to talk to the database.
 		Hint: This is important
 	--->
-	<cfset databaseGateway = createObject('component', 'lessons.SQLi.dbGateway') />
+	<cfset databaseGateway = createObject('component', 'dbGateway') />
 	
 	<!--- 
 		Check to see if the form has been submitted

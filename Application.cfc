@@ -22,6 +22,7 @@
 	</cffunction>
 
 	<cffunction name="onRequestStart" access="public" returntype="void" output="false">
+		<cfheader name="X-XSS-Protection" value="0">
 		<cfset onApplicationStart() />
 	</cffunction>
 

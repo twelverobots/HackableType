@@ -1,5 +1,5 @@
 <cfif NOT structKeyExists(SESSION, "currentLesson")>
-	<cflocation url="/" addtoken="false"  />
+	<cflocation url="/?noCurrentLesson" addtoken="false"  />
 </cfif>
 
 <cfsavecontent variable="jsVar">

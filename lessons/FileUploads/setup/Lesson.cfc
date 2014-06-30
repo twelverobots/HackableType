@@ -1,5 +1,5 @@
 <cfcomponent extends="components.Lesson" implements="interfaces.iLesson">
-	<cfset variables.lessonName = "File Uploads" />
+	<cfset variables.lessonName = "FileUploads" />
 
 	<cffunction name="setup" access="public" returntype="void" output="false">
 		<cfset var imgPath = getLessonDirectory() & "images">

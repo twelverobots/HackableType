@@ -6,7 +6,8 @@
 	<cffile action="upload" 
 			accept="image/jpg,image/gif,image/png,image/jpeg" 
 			filefield="photo" 
-			destination="#ExpandPath("./images/")#" 
+			strict="false"
+			destination="#ExpandPath("../images/")#" 
 			nameconflict="overwrite">
 
 	<h3>Thanks for uploading your photo:</h3>

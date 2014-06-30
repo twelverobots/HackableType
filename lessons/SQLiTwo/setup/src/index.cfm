@@ -7,7 +7,7 @@
 		lesson uses to talk to the database.
 		Hint: This is important
 	--->
-	<cfset databaseGateway = createObject('component', 'lessons.SQLiTwo.dbGateway') />
+	<cfset databaseGateway = createObject('component', 'dbGateway') />
 	
 	<!--- Get all news articles --->
 	<cfset results = databaseGateway.getArticles() />
