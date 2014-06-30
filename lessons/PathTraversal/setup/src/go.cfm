@@ -3,6 +3,7 @@
 	<cf_lessonToolbar />
 
 	<cfparam name="url.page" default="">
-	<cfinclude template="includes/#url.page#">
-	
+	<div id="content">
+		<cfinclude template="../includes/#url.page#">
+	</div>
 </cf_layout>

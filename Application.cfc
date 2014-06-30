@@ -3,7 +3,7 @@
 		this.name = "hackableType";
 		this.customtagpaths = expandPath('/tags');
 		this.sessionManagement = true;
-		this.scriptProtect = "off";
+		this.scriptProtect = "none";
 	</cfscript>
 	
 	<cffunction name="onApplicationStart" access="public" returntype="void" output="false">

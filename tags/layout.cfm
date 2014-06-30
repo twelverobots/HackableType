@@ -21,7 +21,7 @@
 		<link href="/css/table.css" rel="stylesheet" type="text/css" media="screen" />
 		
 		<!--JAVASCRIPT -->
-		
+		<script src="/js/jquery-1.11.1.min.js" type="text/javascript"></script>
 		
 		
 		
@@ -67,7 +67,7 @@
 <cfelse><!--- footer --->
 		</div>
 		<div id="footer">hackableType is open-sourced under the GPL license. &copy; Copyright <a href="http://12robots.com/">Jason Dean</a> &amp; <a href="http://foundeo.com/">Pete Freitag</a> 2010-#Year(now())#.</div>
-		<script src="/js/jquery-1.11.1.min.js" type="text/javascript"></script>
+		
 		<script src="/js/bootstrap.min.js" type="text/javascript"></script>
 		<script src="/js/hints.js" type="text/javascript"></script>
 	</body>

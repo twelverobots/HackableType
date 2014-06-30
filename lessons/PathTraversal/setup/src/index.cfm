@@ -16,5 +16,12 @@
 		
 		<h4>Bonus Round</h4>
 		<p>Can you find a way to read the contents of the <code>/etc/passwd</code> file?</p>
+
+		
+		<cfset logfile = ExpandPath("../private/log.txt")>
+		<cfset logmsg = "Hit: #cgi.script_name# with #cgi.http_user_agent# at #now()##chr(13)#">
+		<cffile action="append" file="#logfile#" output="#logmsg#">
+		
+		
 	</div>
 </cf_layout>

@@ -1,5 +1,5 @@
 <cfif NOT structKeyExists(SESSION, "currentLesson")>
-	<cflocation url="/?noCurrentLesson" addtoken="false"  />
+	<cfset session.currentLesson = "lessons/" & ListGetAt(cgi.script_name, 2, "/")>
 </cfif>
 
 <cfsavecontent variable="jsVar">
