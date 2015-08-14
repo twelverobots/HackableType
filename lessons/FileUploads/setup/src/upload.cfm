@@ -13,7 +13,7 @@
 	<h3>Thanks for uploading your photo:</h3>
 	<br />
 	<cfoutput>
-		<img src="images/#cffile.ServerFile#" alt="Image Preview" />
+		<img src="../images/#cffile.ServerFile#" alt="Image Preview" />
 	</cfoutput>
 
 </cf_layout>
