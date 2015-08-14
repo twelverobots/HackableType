@@ -5,7 +5,7 @@
 	<div id="content">
 		<h2>Path Traversals</h2>
 		
-		<p>Can you read the contents of the <a href="private/passwords.cfm">private/passwords.cfm</a> file?</p>
+		<p>Can you read the contents of the <a href="../private/passwords.cfm">private/passwords.cfm</a> file?</p>
 		
 		<br />
 		

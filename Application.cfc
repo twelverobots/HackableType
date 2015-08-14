@@ -4,6 +4,7 @@
 		this.customtagpaths = expandPath('/tags');
 		this.sessionManagement = true;
 		this.scriptProtect = "none";
+		this.compileExtForInclude = "*";
 	</cfscript>
 	
 	<cffunction name="onApplicationStart" access="public" returntype="void" output="false">
