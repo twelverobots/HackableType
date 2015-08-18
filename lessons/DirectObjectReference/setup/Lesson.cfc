@@ -23,7 +23,7 @@
 		
 		<cfset copyLessonSourceFiles()>
 		
-		<cfset dbGateway = createObject('component', 'lessons.DirectObjectReference.dbGateway') />
+		<cfset dbGateway = createObject('component', 'lessons.DirectObjectReference.playground.dbGateway') />
 		<cfset session.user = dbGateway.getUserInfo(1) />	
 		
 	</cffunction>	
