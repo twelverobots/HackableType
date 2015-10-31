@@ -51,6 +51,7 @@
 	            <li class="dropdown<cfif attributes.activeMenu IS "tools"> active</cfif>">
                 <a href="/tools/http.cfm" class="dropdown-toggle" data-toggle="dropdown">Tools <b class="caret"></b></a>
                 <ul class="dropdown-menu">
+                  <li><a href="/tools/encoders.cfm">Encoders</a></li>
                   <li><a href="/tools/http.cfm">HTTP Util</a></li>
                   <li class="divider"></li>
                   <li class="dropdown-header">Regex Tools</li>
